@@ -1,0 +1,14 @@
+Analista Pro PC Desktop 1.0.0
+Fuente: Analista_Pro_PC_v16_Offline proporcionado en el chat.
+Runtime: Electron 22.3.27 (Chromium 108).
+Empaquetador: electron-builder 24.13.3.
+Build targets: Windows NSIS installer + portable executable, x64 + ia32.
+Entry point: www/index.html.
+Modo: offline; las solicitudes HTTP/HTTPS/WS/WSS se bloquean.
+
+
+LOGO
+- Esta edición usa exactamente el mismo logotipo base de la APK Android (ic_launcher).
+
+ICONO WINDOWS - CORRECCION 1.0.2
+El archivo assets/analista-pro.ico ahora incluye una capa real de 256x256 píxeles, requisito de electron-builder.

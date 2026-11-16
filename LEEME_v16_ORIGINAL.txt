@@ -1,0 +1,21 @@
+ANALISTA PRO v16 — EDICIÓN PC
+
+Esta carpeta contiene exclusivamente la edición PC.
+
+INICIO: abre index.html.
+La pantalla de selección muestra únicamente la plataforma PC.
+No incluye la edición de teléfonos.
+
+LOGOTIPO
+- Imagen original integrada: 640 x 640 px (WebP).
+- Visualización en inicio y selector: 138 x 138 px.
+- El logotipo del encabezado de la herramienta conserva su tamaño adaptable.
+
+USO OFFLINE
+- Extrae la carpeta completa y mantén juntos sus cuatro HTML.
+- No necesita conexión para cargar la interfaz ni sus recursos integrados.
+- La exportación MP4 depende de las capacidades H.264 del navegador/dispositivo.
+
+Esta edición conserva las herramientas y los mapas de la versión 15; los cambios
+visibles de esta entrega son la separación por plataforma y el tamaño del logotipo
+en las pantallas de inicio/selección.

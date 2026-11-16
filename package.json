@@ -1,0 +1,55 @@
+{
+  "name": "analista-pro-pc",
+  "version": "1.0.2",
+  "description": "Analista Pro PC - aplicación de escritorio offline para Windows",
+  "private": true,
+  "main": "main.js",
+  "author": "Analista Pro",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist:windows": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "22.3.27",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.analistapro.pc",
+    "productName": "Analista Pro PC",
+    "asar": true,
+    "compression": "normal",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "www/**/*",
+      "assets/analista-pro.ico"
+    ],
+    "win": {
+      "icon": "assets/analista-pro.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "artifactName": "Analista-Pro-PC-${version}-${arch}.${ext}",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "artifactName": "Analista-Pro-PC-Instalador-${version}-${arch}.${ext}",
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Analista Pro PC",
+      "uninstallDisplayName": "Analista Pro PC"
+    },
+    "portable": {
+      "artifactName": "Analista-Pro-PC-Portable-${version}-${arch}.${ext}"
+    }
+  }
+}
